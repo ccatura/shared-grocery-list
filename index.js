@@ -1,8 +1,10 @@
 var submitChat = document.querySelector('.submit-chat');
+var chatToSubmit = document.getElementById('chat-to-submit');
 
 
-submitChat.onclick = function() {
-    var chatToSubmit = document.getElementById('chat-to-submit');
+
+
+function updateChat() {
     var newChat = document.createElement("div"); 
     var chat = chatToSubmit.value;
     if (chat) {
@@ -13,3 +15,11 @@ submitChat.onclick = function() {
         chatToSubmit.value = "";
     }
 }
+
+
+submitChat.addEventListener('click', updateChat);
+chatToSubmit.addEventListener('keyup', function(event) {
+    if (event.keyCode === 13) {
+        updateChat();
+    }
+});
