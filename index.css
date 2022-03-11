@@ -61,9 +61,16 @@ h3 {
 }
 
 .chat-box-outer {
+    display: flex;
+    flex-flow: column nowrap;
     padding: 4px 15px 4px 0;
     background-color: #ccc;
     border-radius: 20px;
+}
+
+.chat-box-outer input,
+.chat-box-outer button {
+    margin: 0 0 0 15px;
 }
 
 .chat-line {
