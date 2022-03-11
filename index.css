@@ -51,16 +51,19 @@ h3 {
     flex-flow: column-reverse nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #ccc;
     padding: 15px 15px 5px 15px;
     width: 100%;
     color: black;
     height: 150px;
-    border-radius: 20px;
     text-align: left;
     font-size: .8em;
     overflow-y: auto;
-    scrollbar-width:  0;
+}
+
+.chat-box-outer {
+    padding: 4px 15px 4px 0;
+    background-color: #ccc;
+    border-radius: 20px;
 }
 
 .chat-line {
