@@ -1,0 +1,31 @@
+DB Tables
+
+Users
+Lists
+Chat (Only linked to specific list)
+Items
+
+
+
+--------------------------------------
+
+
+
+USERS TABLE
+ID
+Name
+
+
+LIST TABLE
+List ID
+List Name
+Creaded By (user id)
+Chat ID
+
+
+ITEMS TABLE
+Item ID
+List ID
+Checked/Unchecked
+Image URL
+Notes
