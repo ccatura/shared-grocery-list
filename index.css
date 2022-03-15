@@ -73,15 +73,31 @@ h3 {
     border-radius: 20px;
 }
 
-.chat-box-outer input,
-.chat-box-outer button {
+.chat-input-section {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px 0 0 0;
+}
+
+.chat-input-section input,
+.chat-input-section button {
     margin: 0 0 0 15px;
+}
+
+.chat-input-section input {
+    flex: 1;
+    height: 25px;
+    padding: 2px 5px;
+}
+
+.chat-input-section button {
+    width: 50px;
+    margin: 0 20px 0 10px;
 }
 
 .chat-line {
     margin: 0 0 10px 0;
 }
-
 
 
 

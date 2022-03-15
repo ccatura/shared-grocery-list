@@ -6,11 +6,14 @@ var chatToSubmit = document.getElementById('chat-to-submit');
 
 function updateChat() {
     var newChat = document.createElement("div"); 
-    var chat = chatToSubmit.value;
+    var chat    = chatToSubmit.value;
+    
     if (chat) {
-        newChat.className = "chat-line";
         var chatBox = document.querySelector('.chat-box');
-            newChat.textContent = chat;
+
+        newChat.className = "chat-line";
+
+        newChat.innerHTML = "<strong>Charlie:</strong> " + chat;
         chatBox.prepend(newChat);
         chatToSubmit.value = "";
     }
