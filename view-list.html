@@ -11,62 +11,34 @@
 </head>
 <body>
 
-
     <div class="wrapper">
-        <h3>List: ABC123</h3>
+        <div class="headline">List: ABC123</div>
         <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Bananas</h4>
+            <input type="checkbox" class="check"  id="item-01">
+            <label for="item-01" class="list-title">Bananas</label>
         </div>
         <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Apples</h4>
+            <input type="checkbox" class="check"  id="item-02">
+            <label for="item-02" class="list-title">Apples</label>
         </div>
         <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Gummy Bears</h4>
+            <input type="checkbox" class="check"  id="item-03">
+            <label for="item-03" class="list-title">Gummy Bears</label>
         </div>
-        <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Tears of My Enemies</h4>
+
+        <div class="add-item-button-wrapper">
+            <div class="add-item-button" id="add-item-button">
+                <div>+</div>
+            </div>
         </div>
-        <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Oranges</h4>
-        </div>
-        <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Pears</h4>
-        </div>
-        <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Chips</h4>
-        </div>
-        <div class="row">
-            <input type="checkbox" class="check">
-            <h4>Licorice</h4>
-        </div>
+
+
 
         <div class="chat-wrapper">
             <div class="chat-box-outer">
                 <div class="chat-box">
                     <div class="chat-line">
-                        <strong>Charlie:</strong> ok ;-)
-                    </div>
-                    <div class="chat-line">
-                        <strong>Asta:</strong> Let me know when you're checking out.
-                    </div>
-                    <div class="chat-line">
-                        <strong>Charlie:</strong> Just got here.
-                    </div>
-                    <div class="chat-line">
-                        <strong>Asta:</strong> Where are you?
-                    </div>
-                    <div class="chat-line">
-                        <strong>Charlie:</strong> Test, what?
-                    </div>
-                    <div class="chat-line">
-                        <strong>Asta:</strong> This is test data.
+                        <strong>Raquel:</strong> Let me know when you're checking out.
                     </div>
                 </div>
                 <div class="chat-input-section">
@@ -76,6 +48,23 @@
             </div>
         </div>
 
+        <div class="add-item-input-box">
+            <div class="heading-with-close-button">
+                <div class="headline">Enter New item</div>
+                <div class="close-button" id="add-item-close-button"> X </div>
+            </div>
+                <div class="inputs-wrapper">
+                    <input type="text">
+                <button id="add-item-submit">&nbsp;&#10004;&nbsp;</button>
+            </div>
+        </div>
+
+
+
+
+
+
     </div>
+
 </body>
 </html>
